@@ -1,17 +1,14 @@
-import Hero from "../components/Hero.tsx";
+import Hero from "../components/hero/Hero.tsx";
 import Chiffres from "../components/Chiffres.tsx";
 import Experience from "../components/Experience.tsx";
 import ServiceList from "../components/ServiceList.tsx";
 import WhyList from "../components/WhyList.tsx";
+import {services} from "../data/Services.tsx";
+import {raisons} from "../data/Why.tsx";
+import Confiance from "../components/Confiance.tsx";
+import Cta from "../components/Cta.tsx";
 
 export default function Home() {
-
-    const services = [
-        { title: "Déménagement particulier", to: "/services", image: "/img-tempo.jpg" },
-        { title: "Transfert d'entreprise", to: "/services", image: "/img-tempo.jpg",},
-        { title: "Déménagement particulier", to: "/services", image: "/img-tempo.jpg" },
-        { title: "Garde meubles", to: "/services", image: "/img-tempo.jpg" },
-    ];
 
     return (
         <>
@@ -31,16 +28,17 @@ export default function Home() {
             <WhyList
                 title="Pourquoi nous ?"
                 description="Nos valeurs façonnent notre identité et notre relation clients : elles s'alignent sur nos services qui consistent à donner à chaque individu et chaque organisation les moyens de réussir."
-                reasons={[
-                    { title: "Raison 1", description: "Nos valeurs façonnent notre identité et notre relation clients : elles s'alignent sur nos services qui consistent à donner à chaque individu et chaque organisation les moyens de réussir." },
-                    { title: "Raison 2", description: "Nos valeurs façonnent notre identité et notre relation clients : elles s'alignent sur nos services qui consistent à donner à chaque individu et chaque organisation les moyens de réussir." },
-                    { title: "Raison 3", description: "Nos valeurs façonnent notre identité et notre relation clients : elles s'alignent sur nos services qui consistent à donner à chaque individu et chaque organisation les moyens de réussir." },
-                    { title: "Raison 4", description: "Nos valeurs façonnent notre identité et notre relation clients : elles s'alignent sur nos services qui consistent à donner à chaque individu et chaque organisation les moyens de réussir." },
-                    { title: "Raison 5", description: "Nos valeurs façonnent notre identité et notre relation clients : elles s'alignent sur nos services qui consistent à donner à chaque individu et chaque organisation les moyens de réussir." },
-                    { title: "Raison 6", description: "Nos valeurs façonnent notre identité et notre relation clients : elles s'alignent sur nos services qui consistent à donner à chaque individu et chaque organisation les moyens de réussir." },
-                ]}
+                reasons={raisons}
             />
 
+            <Confiance />
+
+            <Cta
+                title="Titre du CTA"
+                description="Nos valeurs façonnent notre identité et notre relation clients : elles s’alignent sur nos services qui consistent à donner à chaque individu et chaque organisation les Nos valeurs façonnent notre identité et notre relation clients : elles s’alignent sur nos services qui consistent à donner à chaque individu et chaque"
+                primaryButton={{ label: "En savoir plus sur les offres", href: "/services" }}
+                secondaryButton={{label: "Contact", href: "/contact"}}
+            />
         </>
     );
 }

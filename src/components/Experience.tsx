@@ -1,44 +1,17 @@
-import { Globe, TreeDeciduous } from "lucide-react";
-import type {ReactNode} from "react";
+import {defaultHighlights} from "../data/Highlights.tsx";
+import type {MovingIntroProps} from "../types/Highlight";
 
-export type Highlight = {
-    icon: ReactNode;
-    label: string;
-    text: string;
-};
-
-
-export type MovingIntroProps = {
-    highlights?: Highlight[];
-};
-
-const defaultHighlights: Highlight[] = [
-    {
-        icon: <Globe className="size-6 text-brand-cyan" />,
-        label: "Labels",
-        text: "Nos valeurs façonnent notre identit",
-    },
-    {
-        icon: <TreeDeciduous className="size-6 text-brand-cyan" />,
-        label: "Politiques",
-        text: "Nos valeurs façonnent",
-    },
-];
-
-export default function MovingIntro({
-    highlights = defaultHighlights,
-}: MovingIntroProps) {
-
+export default function MovingIntro({highlights = defaultHighlights}: MovingIntroProps) {
     return (
         <section className="w-full bg-white px-6 py-16">
             <div className="mx-auto flex max-w-5xl flex-col items-center gap-12">
                 <h2 className="text-center text-lg font-medium text-black md:text-3xl">
                     Profitez de l'expérience et du savoir-faire
                     <br/>
-                    de nos déménageurs qualifié, à votre écoute.
+                    de nos déménageurs qualifiés, à votre écoute.
                 </h2>
 
-                <p className="max-w-4xl text-center text-xs md:text-sm leading-tight text-black">
+                <p className="max-w-4xl text-center text-sm leading-tight text-black">
                     Nos valeurs façonnent notre identité et notre relation clients : elles s’alignent sur nos services qui consistent à donner à chaque individu et chaque organisation les Nos valeurs façonnent notre identité et notre relation clients : elles s’alignent sur nos services qui consistent à donner à chaque individu et chaque organisation les Nos valeurs façonnent notre identité et notre relation clients : elles s’alignent sur nos services qui consistent à donner à chaque individu et chaque organisation les Nos valeurs façonnent notre identité et notre relation clients : elles s’alignent sur nos services qui consistent à donner à chaque individu et chaque organisation les
                 </p>
 

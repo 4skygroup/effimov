@@ -1,5 +1,5 @@
 export interface ServiceCardProps {
     title: string;
-    to: string;
+    to?: string;
     image?: string;
 }
