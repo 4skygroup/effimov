@@ -15,7 +15,7 @@ export default function Home() {
             <Hero
                 title="DÉMÉNAGEMENTS EFFIMOV"
                 subtitle="PROFESSIONNALISME, PROXIMITÉ, ÉCO-RESPONSABILITÉ"
-                image="/img-tempo.jpg"
+                image="/img-hero-home.png"
                 primaryLabel="Qui sommes-nous"
                 primaryTo="/qui-sommes-nous"
                 secondaryLabel="Demander un devis gratuitement"

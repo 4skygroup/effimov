@@ -1,9 +1,8 @@
 const logos = [
-    { id: 1, src: "/img-tempo.jpg", alt: "Client 1" },
-    { id: 2, src: "/img-tempo.jpg", alt: "Client 2" },
-    { id: 3, src: "/img-tempo.jpg", alt: "Client 3" },
-    { id: 4, src: "/img-tempo.jpg", alt: "Client 4" },
-    { id: 5, src: "/img-tempo.jpg", alt: "Client 5" },
+    { id: 1, src: "/part1.png", alt: "Client 1" },
+    { id: 2, src: "/part2.png", alt: "Client 2" },
+    { id: 3, src: "/part3.png", alt: "Client 3" },
+    { id: 4, src: "/part4.png", alt: "Client 4" },
 ];
 
 export default function Confiance() {
@@ -18,7 +17,7 @@ export default function Confiance() {
                 </p>
             </div>
 
-            <div className="mt-10 grid grid-cols-2 gap-6 md:grid-cols-5 md:gap-10">
+            <div className="mt-10 grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-10">
                 {logos.map((logo) => (
                     <div
                         key={logo.id}

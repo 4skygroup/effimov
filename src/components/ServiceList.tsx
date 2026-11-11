@@ -1,11 +1,10 @@
 import ServiceCard from "./ServiceCard";
-import type {ServiceListProps} from "../types/ServiceListProps.ts";
+import type { ServiceListProps } from "../types/ServiceListProps.ts";
 
 export default function ServiceList({
                                         title,
                                         desc,
-                                        items,
-                                    }: ServiceListProps) {
+                                        items,}: ServiceListProps) {
 
     return (
         <section className="mx-auto w-full max-w-6xl px-6 py-12">
@@ -14,23 +13,19 @@ export default function ServiceList({
                     {title}
                 </h2>
 
-                <p className="max-w-3xl text-sm mb-10">
+                <p className="mb-10 max-w-3xl text-sm">
                     {desc}
                 </p>
             </div>
 
-            <div className="flex flex-wrap justify-center gap-6">
+            <div className="mx-auto grid max-w-4xl grid-cols-1 gap-6 md:grid-cols-2">
                 {items.map((item, index) => (
-                    <div
+                    <ServiceCard
                         key={`${item.title}-${index}`}
-                        className="w-full sm:w-64 lg:w-64"
-                    >
-                        <ServiceCard
-                            title={item.title}
-                            to={item.to}
-                            image={item.image}
-                        />
-                    </div>
+                        title={item.title}
+                        to={item.to}
+                        image={item.image}
+                    />
                 ))}
             </div>
         </section>

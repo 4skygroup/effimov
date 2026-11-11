@@ -21,7 +21,7 @@ export default function Hero({
 }: HeroProps) {
     return (
         <section
-            className={`relative flex min-h-screen w-full items-center justify-center overflow-hidden ${
+            className={`relative flex min-h-[calc(100vh-65px)] w-full items-center justify-center overflow-hidden ${
                 image ? "" : "bg-brand-gold"
             }`}
         >
