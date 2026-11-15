@@ -18,7 +18,7 @@ export default function Home() {
                 image="/img-hero-home.png"
                 primaryLabel="Qui sommes-nous"
                 primaryTo="/qui-sommes-nous"
-                secondaryLabel="Demander un devis gratuitement"
+                secondaryLabel="Devis gratuit"
                 secondaryTo="/devis"
             />
 

@@ -1,17 +1,7 @@
 import { Link } from "react-router-dom";
-
-export interface HeroProps {
-    title: string;
-    subtitle: string;
-    image?: string;
-    primaryLabel: string;
-    primaryTo: string;
-    secondaryLabel: string;
-    secondaryTo: string;
-}
+import type {HeroProps} from "../../types/Hero.ts";
 
 export default function Hero({
-                                 title,
                                  subtitle,
                                  image,
                                  primaryLabel,
@@ -21,32 +11,31 @@ export default function Hero({
 }: HeroProps) {
     return (
         <section
-            className={`relative flex min-h-[calc(100vh-65px)] w-full items-center justify-center overflow-hidden ${
+            className={`${
                 image ? "" : "bg-brand-gold"
-            }`}
+            } overflow-hidden justify-center items-center w-full min-h-[calc(100vh-65px)] flex relative`}
         >
             {image && (
                 <img
                     src={image}
                     alt=""
-                    className="absolute inset-0 h-full w-full object-cover"
+                    className="object-cover w-full h-full inset-0 absolute"
                 />
             )}
+            <div className="text-black text-center px-6 gap-2 items-center flex-col flex mt-52 z-10 relative">
 
-            <div className="relative z-10 flex flex-col items-center gap-6 px-6 text-center text-black">
-                <h1 className="text-2xl font-normal sm:text-3xl">{title}</h1>
-                <p className="text-xs sm:text-sm">{subtitle}</p>
+                <p className="sm:text-sm text-xs">{subtitle}</p>
 
-                <div className="flex flex-col items-center gap-4 sm:flex-row sm:gap-5">
+                <div className="sm:gap-5 sm:flex-row gap-4 items-center flex-col flex">
                     <Link
                         to={primaryTo}
-                        className="rounded-md bg-black px-5 py-2.5 text-sm text-white hover:opacity-90"
+                        className="hover:opacity-90 text-white text-sm py-2.5 px-5 bg-black rounded-md"
                     >
                         {primaryLabel}
                     </Link>
                     <Link
                         to={secondaryTo}
-                        className="rounded-md bg-brand-cyan px-5 py-2.5 text-sm text-black hover:opacity-90"
+                        className="hover:opacity-90 text-black text-sm py-2.5 px-5 bg-brand-cyan rounded-md"
                     >
                         {secondaryLabel}
                     </Link>
