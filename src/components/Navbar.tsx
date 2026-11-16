@@ -22,6 +22,7 @@ const navItems: NavItem[] = [
             { label: "Qui sommes nous", to: "/a-propos/qui-sommes-nous" },
             { label: "Savoir faire", to: "/a-propos/savoir-faire" },
             { label: "Certifications", to: "/a-propos/certifications" },
+            { label: "Implentatations", to: "/a-propos/implentatations" },
         ],
     },
     {

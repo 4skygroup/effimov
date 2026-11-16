@@ -5,6 +5,8 @@ import Footer from "./components/Footer.tsx";
 import Navbar from "./components/Navbar.tsx";
 import SavoirFaire from "./pages/SavoirFaire.tsx";
 import Certifications from "./pages/Certifications.tsx";
+import Service1 from "./pages/Service1.tsx";
+import Implantatations from "./pages/Implantatations.tsx";
 
 export default function App() {
   return (
@@ -15,6 +17,9 @@ export default function App() {
              <Route path="/a-propos/qui-sommes-nous" element={<About />} />
              <Route path="/a-propos/savoir-faire" element={<SavoirFaire />} />
              <Route path="/a-propos/certifications" element={<Certifications />} />
+             <Route path="/a-propos/implentatations" element={<Implantatations />} />
+
+             <Route path="/services/service-1" element={<Service1 />} />
 
          </Routes>
          <Footer />

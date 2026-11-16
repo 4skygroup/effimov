@@ -1,0 +1,55 @@
+type Offer = {
+    title: string;
+    link: string;
+    image?: string;
+};
+
+type OffersProps = {
+    offers?: Offer[];
+};
+
+const defaultOffers: Offer[] = [
+    { title: "Confort plus", link: "/offres/confort-plus", image: "" },
+    { title: "Confort", link: "/offres/confort", image: "" },
+    { title: "Standard", link: "/offres/standard", image: "" },
+    { title: "Éco", link: "/offres/eco", image: "" },
+];
+
+function OfferCard({ title, link, image }: Offer) {
+    return (
+        <a
+            href={link}
+            className={`relative flex h-96 w-full items-end justify-center overflow-hidden rounded-xl border-2 border-brand-cyan pb-4 shadow-md transition hover:-translate-y-1 hover:shadow-lg ${
+                image ? "bg-white" : "bg-brand-gold"
+            }`}
+        >
+            {image && (
+                <img
+                    src={image}
+                    alt={title}
+                    className="absolute inset-0 h-full w-full object-cover"
+                />
+            )}
+            <span className="relative text-xs font-medium text-black">{title}</span>
+        </a>
+    );
+}
+
+export default function Offers({ offers = defaultOffers }: OffersProps) {
+    return (
+        <section className="w-full px-6 py-12">
+            <h2 className="mb-12 text-center text-2xl text-black">Nos offres</h2>
+
+            <div className="mx-auto grid max-w-5xl grid-cols-2 gap-6 lg:grid-cols-4">
+                {offers.map((offer) => (
+                    <OfferCard
+                        key={offer.title}
+                        title={offer.title}
+                        link={offer.link}
+                        image={offer.image}
+                    />
+                ))}
+            </div>
+        </section>
+    );
+}
