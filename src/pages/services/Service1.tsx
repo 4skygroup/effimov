@@ -1,6 +1,6 @@
-import HeroService1 from "../components/hero/HeroService1.tsx";
-import AnalyseDemenagement from "../components/AnalyseDemenagement.tsx";
-import Offers from "../components/Offers.tsx";
+import HeroService1 from "../../components/hero/HeroService1.tsx";
+import AnalyseDemenagement from "../../components/AnalyseDemenagement.tsx";
+import Offers from "../../components/Offers.tsx";
 
 
 export default function Service1 (){
@@ -29,6 +29,7 @@ export default function Service1 (){
                     },
                 ]}
             />
+
             <Offers />
         </>
     )

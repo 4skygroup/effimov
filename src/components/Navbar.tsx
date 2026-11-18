@@ -29,7 +29,7 @@ const navItems: NavItem[] = [
         label: "Services",
         to: "/services",
         sousLiens: [
-            { label: "Service 1", to: "/services/service-1" },
+            { label: "DÉMÉNAGEMENT PARTICULIER", to: "/services/service-1" },
             { label: "Service 2", to: "/services/service-2" },
             { label: "Service 3", to: "/services/service-3" },
         ],
