@@ -41,7 +41,6 @@ export default function ConfortPlus (){
         },
     ];
 
-
     return (
         <>
             <HeroConfortPlusParticulier />
@@ -62,7 +61,7 @@ export default function ConfortPlus (){
                 imageAlt="img"
             />
 
-            <InterventionTimelineConfortPlusParticulier steps={steps} />;
+            <InterventionTimelineConfortPlusParticulier steps={steps} />
 
             <ConfortPlusParticulier />
         </>

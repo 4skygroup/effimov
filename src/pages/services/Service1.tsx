@@ -30,7 +30,16 @@ export default function Service1 (){
                 ]}
             />
 
-            <Offers />
+            <Offers
+                offers={[
+                    { title: "Confort plus", link: "/demenagement-particulier/offres/confort-plus", image: "/images/confort-plus.jpg" },
+                    { title: "Confort", link: "/demenagement-particulier/offres/confort" },
+                    { title: "Confort", link: "/" },
+                    { title: "Confort", link: "/" },
+
+                ]}
+            />
+
         </>
     )
 }

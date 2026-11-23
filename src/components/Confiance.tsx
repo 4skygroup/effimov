@@ -17,11 +17,11 @@ export default function Confiance() {
                 </p>
             </div>
 
-            <div className="mt-10 grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-10">
+            <div className="mt-10 grid grid-cols-2 place-items-center gap-6 md:grid-cols-4 md:gap-10">
                 {logos.map((logo) => (
                     <div
                         key={logo.id}
-                        className={`aspect-square w-full overflow-hidden ${
+                        className={`aspect-square w-24 overflow-hidden md:w-32 ${
                             logo.src ? "" : "bg-brand-gold"
                         }`}
                     >
@@ -29,7 +29,7 @@ export default function Confiance() {
                             <img
                                 src={logo.src}
                                 alt={logo.alt}
-                                className="size-full"
+                                className="size-full object-contain"
                             />
                         )}
                     </div>

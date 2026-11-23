@@ -22,8 +22,8 @@ export default function App() {
              <Route path="/a-propos/implentatations" element={<Implantatations />} />
 
              <Route path="/services/service-1" element={<Service1 />} />
-             <Route path="/offres/confort-plus" element={<ConfortPlus />} />
-             <Route path="/offres/confort" element={<Confort />} />
+             <Route path="/demenagement-particulier/offres/confort-plus" element={<ConfortPlus />} />
+             <Route path="/demenagement-particulier/offres/confort" element={<Confort />} />
 
          </Routes>
          <Footer />
