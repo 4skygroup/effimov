@@ -11,8 +11,8 @@ export default function Footer() {
                         <img src="/logo.png" alt="Logo" className="h-10 w-28 object-contain self-start" />
 
                         <address className="not-italic flex flex-col gap-3 text-xs">
-                            <span>69, Avenue Victor Cresson</span>
-                            <span>56 rue Monceau 75008 paris</span>
+                            <span>56 rue Monceau</span>
+                            <span>75008 Paris</span>
                             <span>+33 1 84 16 70 26</span>
                         </address>
                     </div>
