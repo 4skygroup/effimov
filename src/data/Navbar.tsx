@@ -25,4 +25,4 @@ export const navItems: NavItem[] = [
     { label: "Contact", to: "/contact" },
 ];
 
-export const telephone = "06 10 00 00 00";
+export const telephone = "+33 1 84 16 70 26";

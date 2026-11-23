@@ -28,6 +28,10 @@ export default function App() {
 
          </Routes>
          <Footer />
+          {/* notes
+            - un peu plus petit
+
+          */}
       </>
   );
 }

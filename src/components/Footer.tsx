@@ -12,8 +12,8 @@ export default function Footer() {
 
                         <address className="not-italic flex flex-col gap-3 text-xs">
                             <span>69, Avenue Victor Cresson</span>
-                            <span>92130- Issy les Moulineaux</span>
-                            <span>01 00 00 00 00</span>
+                            <span>56 rue Monceau 75008 paris</span>
+                            <span>+33 1 84 16 70 26</span>
                         </address>
                     </div>
 

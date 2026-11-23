@@ -17,11 +17,11 @@ export default function Confiance() {
                 </p>
             </div>
 
-            <div className="mt-10 grid grid-cols-2 place-items-center gap-6 md:grid-cols-4 md:gap-10">
+            <div className="mt-10 grid grid-cols-2 place-items-center gap-6 md:grid-cols-4 md:gap-8">
                 {logos.map((logo) => (
                     <div
                         key={logo.id}
-                        className={`aspect-square w-24 overflow-hidden md:w-32 ${
+                        className={`aspect-square w-16 overflow-hidden md:w-24 ${
                             logo.src ? "" : "bg-brand-gold"
                         }`}
                     >
