@@ -16,6 +16,11 @@ export default function Certifications (){
         { id: 6, nom: "Certif6", type: "Type de certification", desc: descCommune },
         { id: 7, nom: "Certif7", type: "Type de certification", desc: descCommune },
         { id: 8, nom: "Certif8", type: "Type de certification", desc: descCommune },
+        { id: 9, nom: "Certif9", type: "Type de certification", desc: descCommune },
+        { id: 10, nom: "Certif10", type: "Type de certification", desc: descCommune },
+        { id: 11, nom: "Certif11", type: "Type de certification", desc: descCommune },
+        { id: 12, nom: "Certif12", type: "Type de certification", desc: descCommune },
+
     ];
 
     return (

@@ -1,15 +1,4 @@
-// components/InterventionTimeline.tsx
-export interface TimelineStep {
-    title: string;
-    description: string;
-    items?: string[];
-}
-
-export interface InterventionTimelineProps {
-    heading?: string;
-    steps: TimelineStep[];
-    className?: string;
-}
+import type {InterventionTimelineProps} from "../../types/InterventionTimeLineProps.ts";
 
 export default function InterventionTimelineConfortPlusParticulier({
                                                  heading = "Intervention de nos équipes",

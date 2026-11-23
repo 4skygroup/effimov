@@ -1,15 +1,4 @@
-export interface Etape {
-    numero: number;
-    titre: string;
-    description: string;
-    image?: string;
-}
-
-export interface AnalyseDemenagementProps {
-    titre: string;
-    texte: string;
-    etapes: Etape[];
-}
+import type {AnalyseDemenagementProps} from "../types/AnalyseDemenagementProps.ts";
 
 function VisuelEtape({ image, titre }: { image?: string; titre: string }) {
     if (image) {
@@ -23,7 +12,7 @@ export default function AnalyseDemenagement({
                                                 titre,
                                                 texte,
                                                 etapes,
-                                            }: AnalyseDemenagementProps) {
+}: AnalyseDemenagementProps) {
     return (
         <section className="bg-couleur2 text-couleur3 py-16 px-6">
             <div className="max-w-4xl mx-auto flex flex-col items-center gap-8">

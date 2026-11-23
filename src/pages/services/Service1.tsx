@@ -1,10 +1,10 @@
 import HeroService1 from "../../components/hero/HeroService1.tsx";
 import AnalyseDemenagement from "../../components/AnalyseDemenagement.tsx";
 import Offers from "../../components/Offers.tsx";
+import Cta from "../../components/Cta.tsx";
 
 
 export default function Service1 (){
-
 
     return (
         <>
@@ -34,10 +34,17 @@ export default function Service1 (){
                 offers={[
                     { title: "Confort plus", link: "/demenagement-particulier/offres/confort-plus", image: "/images/confort-plus.jpg" },
                     { title: "Confort", link: "/demenagement-particulier/offres/confort" },
-                    { title: "Confort", link: "/" },
-                    { title: "Confort", link: "/" },
+                    { title: "Standard", link: "/demenagement-particulier/offres/standard" },
+                    { title: "Eco", link: "/" },
 
                 ]}
+            />
+
+            <Cta
+                title="Titre du CTA"
+                description="Depuis 1860, les Déménagements Delacquis vous accompagnent dans tous vos déménagements. Que vous soyez professionnel ou particulier, notre équipe se déplace pour vous en France et à l’international, ainsi que sur les collectivités d’Outre-mer."
+                primaryButton={{label: "En savoir plus sur les offres" , href: "/services"}}
+                secondaryButton={{label: "Contatez-nous" , href: "/contact"}}
             />
 
         </>

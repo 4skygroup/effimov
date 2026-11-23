@@ -1,11 +1,11 @@
-type OurStoryProps = {
+type SectionConfortPlusParticulierInvProps = {
     title: string;
     text: string;
     image?: string;
     imageAlt?: string;
 };
 
-export default function SectionConfortPlusParticulierInv({ title, text, image, imageAlt = "" }: OurStoryProps) {
+export default function SectionConfortPlusParticulierInv({ title, text, image, imageAlt = "" }: SectionConfortPlusParticulierInvProps) {
     return (
         <section className="w-full bg-white px-6 py-12 md:px-12 md:py-20 lg:px-24">
             <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-16">

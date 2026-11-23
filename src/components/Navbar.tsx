@@ -1,44 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ChevronDown, Menu, Phone, X } from "lucide-react";
-
-type SousLien = {
-    label: string;
-    to: string;
-};
-
-type NavItem = {
-    label: string;
-    to: string;
-    sousLiens?: SousLien[];
-};
-
-const navItems: NavItem[] = [
-    { label: "Home", to: "/" },
-    {
-        label: "À propos",
-        to: "/a-propos",
-        sousLiens: [
-            { label: "Qui sommes nous", to: "/a-propos/qui-sommes-nous" },
-            { label: "Savoir faire", to: "/a-propos/savoir-faire" },
-            { label: "Certifications", to: "/a-propos/certifications" },
-            { label: "Implentatations", to: "/a-propos/implentatations" },
-        ],
-    },
-    {
-        label: "Services",
-        to: "/services",
-        sousLiens: [
-            { label: "DÉMÉNAGEMENT PARTICULIER", to: "/services/service-1" },
-            { label: "Service 2", to: "/services/service-2" },
-            { label: "Service 3", to: "/services/service-3" },
-        ],
-    },
-    { label: "Actualités", to: "/actualites" },
-    { label: "Contact", to: "/contact" },
-];
-
-const telephone = "06 00 00 00 00";
+import {navItems, telephone} from "../data/Navbar.tsx";
 
 export default function Navbar() {
     const [menuOuvert, setMenuOuvert] = useState(false);
