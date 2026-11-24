@@ -1,8 +1,8 @@
 const logos = [
-    { id: 1, src: "/part1.png", alt: "Client 1" },
-    { id: 2, src: "/part2.png", alt: "Client 2" },
-    { id: 3, src: "/part3.png", alt: "Client 3" },
-    { id: 4, src: "/part4.png", alt: "Client 4" },
+    { id: 1, src: "/confiance/part1.png", alt: "Client 1" },
+    { id: 2, src: "/confiance/part2.png", alt: "Client 2" },
+    { id: 3, src: "/confiance/part3.png", alt: "Client 3" },
+    { id: 4, src: "/confiance/part4.png", alt: "Client 4" },
 ];
 
 export default function Confiance() {
@@ -21,7 +21,7 @@ export default function Confiance() {
                 {logos.map((logo) => (
                     <div
                         key={logo.id}
-                        className={`aspect-square w-16 overflow-hidden md:w-24 ${
+                        className={`aspect-square w-14 overflow-hidden md:w-18 ${
                             logo.src ? "" : "bg-brand-gold"
                         }`}
                     >

@@ -18,6 +18,7 @@ export default function SectionConfortPlusParticulierInv({ title, text, image, i
                     <h2 className="text-2xl font-semibold text-black md:text-3xl">{title}</h2>
                     <p className="text-sm text-black">{text}</p>
                 </div>
+
             </div>
         </section>
     );

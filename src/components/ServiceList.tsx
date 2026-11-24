@@ -4,7 +4,8 @@ import type { ServiceListProps } from "../types/ServiceListProps.ts";
 export default function ServiceList({
                                         title,
                                         desc,
-                                        items,}: ServiceListProps) {
+                                        items,
+}: ServiceListProps) {
 
     return (
         <section className="mx-auto w-full max-w-6xl px-6 py-12">

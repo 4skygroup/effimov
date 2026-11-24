@@ -1,15 +1,5 @@
 import { Link } from "react-router-dom";
-
-export type Offer = {
-    title: string;
-    link: string;
-    image?: string;
-};
-
-type OffersProps = {
-    offers: Offer[];
-    title?: string;
-};
+import type {Offer, OffersProps} from "../data/OffersProps.tsx";
 
 function OfferCard({ title, link, image }: Offer) {
     return (

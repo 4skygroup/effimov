@@ -4,7 +4,7 @@ export const navItems: NavItem[] = [
     { label: "Home", to: "/" },
     {
         label: "À propos",
-        to: "/a-propos",
+        to: "/a-propos/qui-sommes-nous",
         sousLiens: [
             { label: "Qui sommes nous", to: "/a-propos/qui-sommes-nous" },
             { label: "Savoir faire", to: "/a-propos/savoir-faire" },

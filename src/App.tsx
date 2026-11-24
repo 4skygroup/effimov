@@ -9,6 +9,9 @@ import Service1 from "./pages/services/Service1.tsx";
 import PageConfortPlusParticulier from "./pages/services/offre1/PageConfortPlusParticulier.tsx";
 import PageConfortParticulier from "./pages/services/offre1/PageConfortParticulier.tsx";
 import PageStandardParticulier from "./pages/services/offre1/PageStandardParticulier.tsx";
+import ServiceList from "./components/ServiceList.tsx";
+import {services} from "./data/Services.tsx";
+import PageEcoParticulier from "./pages/services/offre1/PageEcoParticulier.tsx";
 
 export default function App() {
   return (
@@ -21,17 +24,16 @@ export default function App() {
              <Route path="/a-propos/certifications" element={<Certifications />} />
              {/*<Route path="/a-propos/implentatations" element={} />*/}
 
+             <Route path="/services" element={<ServiceList title="Nos services" items={services} />}/>
              <Route path="/services/demenagement-particulier/" element={<Service1 />} />
              <Route path="/demenagement-particulier/offres/confort-plus" element={<PageConfortPlusParticulier />} />
              <Route path="/demenagement-particulier/offres/confort" element={<PageConfortParticulier />} />
              <Route path="/demenagement-particulier/offres/standard" element={<PageStandardParticulier />} />
+             <Route path="/demenagement-particulier/offres/eco" element={<PageEcoParticulier />} />
 
          </Routes>
          <Footer />
-          {/* notes
-            - un peu plus petit
 
-          */}
       </>
   );
 }

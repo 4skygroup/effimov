@@ -35,7 +35,7 @@ export default function Service1 (){
                     { title: "Confort plus", link: "/demenagement-particulier/offres/confort-plus", image: "/images/confort-plus.jpg" },
                     { title: "Confort", link: "/demenagement-particulier/offres/confort" },
                     { title: "Standard", link: "/demenagement-particulier/offres/standard" },
-                    { title: "Eco", link: "/" },
+                    { title: "Eco", link: "/demenagement-particulier/offres/eco" },
 
                 ]}
             />
